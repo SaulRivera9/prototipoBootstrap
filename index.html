@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Aprendiendo bootstrap</title>
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Oleo+Script+Swash+Caps&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<!--*****  *****-->
+	<!--***** Nav menu *****-->
+	<nav class="navbar navbar-dark navbar-expand-lg bg-dark px-5 sticky-top">
+
+		<div class="container-fluid">
+			<div>
+				<button type="button" class="btn btn-success me-2" data-bs-toggle="modal" data-bs-target="#ventanaModalNavMenu">
+					<i class="bi bi-pencil-square editable"></i>
+				</button>
+				<a class="navbar-brand logo" href="index.html">saul Rivera</a>
+			</div>
+
+		  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#senalNavbar" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		  </button>
+
+		  <div class="collapse navbar-collapse" id="senalNavbar">
+				<ul class="navbar-nav me-auto ms-auto mb-2 mb-lg-0">
+					<li class="nav-item">
+					<a class="nav-link active" aria-current="page" href="#">Home</a>
+					</li>
+					<li class="nav-item">
+					<a class="nav-link active" aria-current="page" href="#">Sobre mí</a>
+					</li>
+					<li class="nav-item">
+					<a class="nav-link active" aria-current="page" href="#">Experiencia</a>
+					</li>
+					<li class="nav-item">
+					<a class="nav-link active" aria-current="page" href="#">Educación</a>
+					</li>
+					<li class="nav-item">
+					<a class="nav-link active" aria-current="page" href="#">Habilidades</a>
+					</li>
+					<li class="nav-item">
+					<a class="nav-link active" aria-current="page" href="#">Proyectos</a>
+					</li>
+
+				</ul>
+
+			<!-- Button trigger modal -->
+			<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ventanaModalInicioSesion">
+			Iniciar sesión
+  			</button>
+			
+		  </div>
+
+		</div>
+	</nav>
+
+	<!--***** Cabecera de redes sociales *****-->
+	<nav class="navbar navbar-dark navbar-expand-lg bg-dark px-5">
+		  <div class="collapse navbar-collapse" id="senalNavbar">
+				<a href="https://argentinaprograma.inti.gob.ar/" target="_blank" rel="noopener noreferrer"><img src="img/logoAP.png" class="img-fluid" alt="Logos del INTI y argentina programa"></a>
+				<div class="ms-auto">
+					<ul class="navbar-nav me-auto ms-auto mb-2 mb-lg-0 list-group list-group-horizontal">
+						<li class="list-group-item">
+								<a href="https://www.linkedin.com/in/saul-rivera-alvarado-574288224/" target="_blank" rel="noopener noreferrer" class="nav-link active"><i class="bi bi-linkedin redes-sociales"></i></a>
+						</li>
+						<li class="list-group-item">
+							<a href="https://github.com/SaulRivera9" target="_blank" rel="noopener noreferrer" class="nav-link active"><i class="bi bi-github redes-sociales"></i></a>
+						</li>
+						<li class="list-group-item">
+							<a href="mailto:saul.rivera.freelancer@gmail.com" target="_blank" rel="noopener noreferrer" class="nav-link active"><i class="bi bi-envelope-at-fill redes-sociales"></i></a>
+						</li>
+					</ul>
+				</div>
+		</div>
+	</nav>
+
+	<!--***** Hero-image *****-->
+
+	<section class="tope">
+		<div class="color-capa d-flex flex-column justify-content-center align-items-center">
+			<h1>Saul Rivera</h1>
+			<div class="col-lg-6 mx-auto">
+				<h3 class="text-center">Developer web Jr full stack</h3>
+			</div>
+			<button type="button" class="btn btn-success me-2" data-bs-toggle="modal" data-bs-target="#ventanaModalHeroImage">
+				<i class="bi bi-pencil-square editable"></i>
+			</button>
+		</div>
+	</section>
+	
+
+	<!--***** Sobre-mi *****-->
+	<section class="py-5" style="background-color: var(--color-background-dos);">
+		<div class="py-2 d-flex flex-row justify-content-center align-items-center">
+			<button type="button" class="btn btn-success me-2" data-bs-toggle="modal" data-bs-target="#ventanaModalSobreMi">
+				<i class="bi bi-pencil-square editable"></i>
+			</button>
+
+			<h2 class="d-inline borde-responsive">
+				Sobre mí
+			</h2>
+		</div>
+		
+		<article class="container">
+			<div class="row featurette pt-3">
+				<div class="col-md-7">
+					<p class="lh-1 texto-marcado">¿Quién soy?</p>
+					<h3>
+							Soy Saúl Rivera Alvarado
+					</h3>
+					<h3>
+						Full Stack Developer Jr
+					</h3>
+					<p>
+						Durante un año fui freelancer, realizaba sitios web de nutricionistas y gimnasios, creando la estategia de maketing (copywriting, SEO, SEM, etc.), diseñando (wireframe, UI, UX, mockup, etc.) y desarrollando el proyecto (front end, back end, bases de dato, etc.). Aparte de las habilidades técnicas, también tuve que desarrollar otras habilidades, como por ej: comunicación asertiva, negociación, gestión del tiempo y de actividades, aprendizaje, etc.
+					</p>
+				</div>
+				<div class="col-md-5">
+					<img src="img/noche-hermosa.jpg" class="img-fluid" alt="Una noche hermosa y colorida">
+				</div>
+			</div>
+		</article>
+	</section>
+
+	<!--***** Experiencia *****-->
+	<section class="py-5" style="background-color: var(--color-background-uno);">
+		<div class="py-2 d-flex flex-row justify-content-center align-items-center">
+			<button type="button" class="btn btn-success me-2" data-bs-toggle="modal" data-bs-target="#ventanaModalExperiencia">
+				<i class="bi bi-pencil-square editable"></i>
+			</button>
+
+			<h2 class="d-inline borde-responsive">
+				Experiencia
+			</h2>
+		</div>
+
+
+
+		<div class="container px-4 py-3" id="featured-3">
+			<div class="row g-4 py-5 row-cols-1 row-cols-lg-3 d-flex justify-content-around">
+
+				<div class="feature col-6 bg-tarjeta p-3 m-5">
+					<div class="d-flex d-inline-flex align-items-center justify-content-center fs-2 mb-2">
+						<p class="logo">saulRivera</p>
+					</div>
+					<h4 class="fs-3">Saul Rivera (freelancer)</h4>
+					<p class="texto-marcado fs-5">Marketer, diseñador y programador</p>
+					<p class="small">2020 - 2021</p>
+					<p>Planificación de la estrategia de marketing y aplicación de copywriting, seo, diseño UI/UX, maquetación del sitio web, 
+						programación de funcionalidades, etc.</p>
+				</div>
+
+
+				<!-- CÓDIGO INSPIRACIÓN PARA LOS LOGOS
+				<div class="feature col">
+					<div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+						<svg class="bi" width="1em" height="1em"><use xlink:href="#collection"></use></svg>
+					</div>
+					<h3 class="fs-2">Featured title</h3>
+					<p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+					<a href="#" class="icon-link d-inline-flex align-items-center">
+						Call to action
+						<svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"></use></svg>
+					</a>
+				</div> -->
+
+			</div>
+		</div>
+
+	</section>
+
+	<!--***** Educacion *****-->
+	<section class="py-5" style="background-color: var(--color-background-dos);">
+		<div class="py-2 d-flex flex-row justify-content-center align-items-center">
+			<button type="button" class="btn btn-success me-2" data-bs-toggle="modal" data-bs-target="#ventanaModalEducacion">
+				<i class="bi bi-pencil-square editable"></i>
+			</button>
+
+			<h2 class="d-inline borde-responsive">
+				Educación
+			</h2>
+		</div>
+
+
+
+		<div class="container px-4 py-3" id="featured-3">
+			<div class="row g-4 py-5 row-cols-1 row-cols-lg-3 d-flex justify-content-around">
+
+				<div class="feature col-6 bg-tarjeta p-3 m-5">
+					<div class="d-flex align-items-center justify-content-center fs-2 mb-2">
+						<img class="img-fluid" src="img/logo-platzi.png" alt="Logo de Platzi">
+					</div>
+					<h4 class="fs-3 d-flex justify-content-center">Platzi</h4>
+					<p>Platzi es una de las plataformas de educación 
+						profesional en línea más grandes de América Latina, 
+						fundada en 2011 por Freddy Vega y Christian Van der 
+						Henst.</p>
+					<p class="texto-marcado fs-5">Programación front end</p>
+					<p class="small">2018 - 2020</p>
+				</div>
+
+				<div class="feature col-6 bg-tarjeta p-3 m-5">
+					<div class="d-flex align-items-center justify-content-center fs-2 mb-2">
+						<img class="img-fluid" src="img/logo-redondo-edteam.png" alt="Logo de EdTeam">
+					</div>
+					<h4 class="fs-3 d-flex justify-content-center">EdTeam</h4>
+					<p>EDteam es un proyecto con la convicción de que la 
+						educación es la herramienta más poderosa para 
+						cambiar el mundo.</p>
+					<p class="texto-marcado fs-5">Diseño UX/UI</p>
+					<p class="small">2019 - 2020</p>
+				</div>
+
+
+				<!-- CÓDIGO INSPIRACIÓN PARA LOS LOGOS
+				<div class="feature col">
+					<div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+						<svg class="bi" width="1em" height="1em"><use xlink:href="#collection"></use></svg>
+					</div>
+					<h3 class="fs-2">Featured title</h3>
+					<p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+					<a href="#" class="icon-link d-inline-flex align-items-center">
+						Call to action
+						<svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"></use></svg>
+					</a>
+				</div> -->
+				
+
+			</div>
+		</div>
+
+	</section>
+
+	<!--***** Habilidades *****-->
+	<section class="py-5" style="background-color: var(--color-background-uno);">
+		<div class="py-2 d-flex flex-row justify-content-center align-items-center">
+			<button type="button" class="btn btn-success me-2" data-bs-toggle="modal" data-bs-target="#ventanaModalHabilidades">
+				<i class="bi bi-pencil-square editable"></i>
+			</button>
+
+			<h2 class="d-inline borde-responsive">
+				Habilidades
+			</h2>
+		</div>
+
+
+
+		<div class="container px-4 py-3" id="featured-3">
+			<div class="pb-5">
+				<h4 class="fs-3 text-center">
+					Habilidades blandas
+				</h4>
+
+				<div class="py-3">
+					<h5>Comunicación efectiva</h5>
+					<div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+						<div class="progress-bar" style="width: 75%">75%</div>
+					</div>
+				</div>
+
+				<div class="py-3">
+					<h5>Gestión del tiempo</h5>
+					<div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">
+						<div class="progress-bar" style="width: 65%">65%</div>
+					</div>
+				</div>
+
+				<div class="py-3">
+					<h5>Adaptabilidad</h5>
+					<div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="89" aria-valuemin="0" aria-valuemax="100">
+						<div class="progress-bar" style="width: 89%">89%</div>
+					</div>
+				</div>
+
+				<h4 class="fs-3 text-center pt-5">
+					Habilidades Duras
+				</h4>
+
+				<div class="py-3">
+					<h5>Figma</h5>
+					<div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="87" aria-valuemin="0" aria-valuemax="100">
+						<div class="progress-bar" style="width: 87%">87%</div>
+					</div>
+				</div>
+
+				<div class="py-3">
+					<h5>HTML</h5>
+					<div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+						<div class="progress-bar" style="width: 90%">90%</div>
+					</div>
+				</div>
+
+				<div class="py-3">
+					<h5>CSS</h5>
+					<div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+						<div class="progress-bar" style="width: 85%">85%</div>
+					</div>
+				</div>
+
+				<div class="py-3">
+					<h5>JavaScript</h5>
+					<div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="68" aria-valuemin="0" aria-valuemax="100">
+						<div class="progress-bar" style="width: 68%">68%</div>
+					</div>
+				</div>
+
+				<div class="py-3">
+					<h5>MySQL</h5>
+					<div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="74" aria-valuemin="0" aria-valuemax="100">
+						<div class="progress-bar" style="width: 74%">74%</div>
+					</div>
+				</div>
+
+				<div class="py-3">
+					<h5>Java</h5>
+					<div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+						<div class="progress-bar" style="width: 70%">70%</div>
+					</div>
+				</div>
+
+				<div class="py-3">
+					<h5>Seguridad web</h5>
+					<div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100">
+						<div class="progress-bar" style="width: 82%">82%</div>
+					</div>
+				</div>
+				
+			</div>
+			
+		</div>
+
+	</section>
+
+	<!--***** Proyectos *****-->
+	<section class="py-5" style="background-color: var(--color-background-dos);">
+		<div class="py-2 d-flex flex-row justify-content-center align-items-center">
+			<button type="button" class="btn btn-success me-2" data-bs-toggle="modal" data-bs-target="#ventanaModalProyectos">
+				<i class="bi bi-pencil-square editable"></i>
+			</button>
+
+			<h2 class="d-inline borde-responsive">
+				Proyectos
+			</h2>
+		</div>
+
+
+		<div class="container px-4 py-3" id="featured-3">
+			<div class="d-flex row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+
+				<div class="card col mx-auto">
+					<img src="img/ciudad-hermosa.jpg" class="card-img-top" alt="Una Ciudad Hermosa">
+					<div class="card-body text-center">
+						<h4 class="fs-3">Portfolio Saul Rivera</h4>
+						<p class="small">2022 - 2023</p>
+						<p>Planificación de la estrategia de marketing y aplicación de copywriting, seo, diseño UI/UX, maquetación del sitio web, 
+							programación de funcionalidades, etc.</p>
+					</div>
+				</div> 
+
+			</div>
+		</div>
+
+
+
+	</section>
+
+	<section class="container">
+		<footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4">
+			<p class="texto-blanco col-md-4 mb-0">© 2022 Saul Rivera</p>
+			<p class="logo col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto text-decoration-none">saul Rivera</p>
+			<a href="mailto:saul.rivera.freelancer@gmail.com" target="_blank" rel="noopener noreferrer" class="logo col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto text-decoration-none">saul.rivera.freelancer@gmail.com</a>
+			<button type="button" class="btn btn-success me-2" data-bs-toggle="modal" data-bs-target="#ventanaModalFooter">
+				<i class="bi bi-pencil-square editable"></i>
+			</button>
+		</footer>
+	</section>
+
+	
+
+
+<!--***** ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** *****-->
+	<!--***** VENTANAS MODALES *****-->
+
+		<!--***** Ventana modal Inicio Sesion *****-->
+		<div class="modal fade bg-dark" id="ventanaModalInicioSesion" tabindex="-1" aria-labelledby="etiquetaModal" aria-hidden="true">
+			<div class="modal-dialog">
+
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="text-dark modal-title fs-5" id="etiquetaModal">Inicie sesión</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<form>
+							<div class="mb-3">
+								<label for="inputEmail" class="form-label">E-mail</label>
+								<input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp">
+							</div>
+
+							<div class="mb-3">
+								<label for="inputContraseña" class="form-label">Contraseña</label>
+								<input type="password" class="form-control" id="inputContraseña">
+							</div>
+							
+							<button type="submit" class="btn btn-primary">Iniciar sesión</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--***** Ventana edicion menu de navegación *****-->
+		<div class="modal fade bg-dark" id="ventanaModalNavMenu" tabindex="-1" aria-labelledby="edicionNavMenu" aria-hidden="true">
+			<div class="modal-dialog">
+
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="text-dark modal-title fs-5" id="edicionNavMenu">Edite el Nav Menú</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+
+						<form>
+							<div class="mb-3">
+								<label for="inputLogo" class="form-label">Logo</label>
+								<input type="text" class="form-control" id="inputLogo" aria-describedby="textoLogo" maxlength="10" placeholder="saulRivera">
+							</div>
+							
+							<button type="submit" class="btn btn-primary">Guardar</button>
+						</form>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--***** Ventana edicion hero-image *****-->
+		<div class="modal fade bg-dark" id="ventanaModalHeroImage" tabindex="-1" aria-labelledby="etiquetaHeroImage" aria-hidden="true">
+			<div class="modal-dialog">
+
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="text-dark modal-title fs-5" id="etiquetaHeroImage">Edición Hero Image</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+
+						<form>
+							<div class="mb-3">
+								<label for="inputNombreApellido" class="form-label">Nombre y Apellido</label>
+								<input type="text" class="form-control" id="inputNombreApellido" aria-describedby="textoNombreApellido" maxlength="20">
+							</div>
+
+							<div class="mb-3">
+								<label for="inputProfesion" class="form-label">Profesión</label>
+								<input type="text" class="form-control" id="inputProfesion" aria-describedby="inputProfesion" maxlength="32">
+							</div>
+							
+							<button type="submit" class="btn btn-primary">Guardar</button>
+						</form>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--***** Ventana edicion sobre-mi *****-->
+		<div class="modal fade bg-dark" id="ventanaModalSobreMi" tabindex="-1" aria-labelledby="etiquetaSobreMi" aria-hidden="true">
+			<div class="modal-dialog">
+
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="text-dark modal-title fs-5" id="etiquetaSobreMi">Edición Sobre Mi</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+
+						<form>
+							<div class="mb-3">
+								<label for="inputTrayectoProfesional" class="form-label">¿Cuál es tu trayectoria profesional? (máx 500 carácteres)</label>
+								<input type="text" class="form-control" id="inputTrayectoProfesional" aria-describedby="inputTrayectoProfesional" maxlength="500">
+							</div>
+
+							<div class="mb-3">
+								<label for="inputFoto" class="form-label">Introduce una foto</label>
+								<input class="form-control" type="file" accept="image/*" id="inputFoto">
+							</div>
+							
+							<button type="submit" class="btn btn-primary">Guardar</button>
+						</form>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--***** Ventana edicion experiencia *****-->
+		<div class="modal fade bg-dark" id="ventanaModalExperiencia" tabindex="-1" aria-labelledby="etiquetaExperiencia" aria-hidden="true">
+			<div class="modal-dialog">
+
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="text-dark modal-title fs-5" id="etiquetaExperiencia">Edición de Experiencia</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+
+						<ul class="nav nav-tabs" id="myTab" role="tablist">
+							<li class="nav-item" role="presentation">
+								<button class="nav-link active" id="uno-tab" data-bs-toggle="tab" data-bs-target="#uno-tab-pane" type="button" role="tab" aria-controls="uno-tab-pane" aria-selected="true">Trabajo 1</button>
+							</li>
+							<li class="nav-item" role="presentation">
+								<button class="nav-link" id="dos-tab" data-bs-toggle="tab" data-bs-target="#dos-tab-pane" type="button" role="tab" aria-controls="dos-tab-pane" aria-selected="false">Trabajo 2</button>
+							</li>
+						</ul>
+
+						<div class="tab-content" id="myTabContent">
+							<div class="tab-pane fade show active" id="uno-tab-pane" role="tabpanel" aria-labelledby="uno-tab" tabindex="0">
+							
+								<form>
+									<!-- <width="1em" height="1em"> Esas son las medidas del logo-->
+		
+									<div class="mb-3">
+										<label for="inputLogo" class="form-label">Introduce un Logo</label>
+										<input class="form-control" type="file" accept="image/*" id="inputLogo">
+									</div>
+		
+									<div class="mb-3">
+										<label for="inputEmpresa" class="form-label">Nombre de la empresa</label>
+										<input type="text" class="form-control" id="inputEmpresa" aria-describedby="inputEmpresa" maxlength="30">
+									</div>
+		
+									<div class="mb-3">
+										<label for="inputRol" class="form-label">Rol que cumplía en la empresa</label>
+										<input type="text" class="form-control" id="inputRol" aria-describedby="inputRol" maxlength="35">
+									</div>
+		
+										<div class="mb-3">
+											<label for="inicioTrabajo" class="form-label">Desde que año ejerció</label>
+											<input type="number" max="2023" min="1970" maxlength="4" class="form-control" id="inicioTrabajo" placeholder="ej: 2002">
+											
+										</div>
+										
+										<div class="mb-3">
+											<label for="finTrabajo" class="form-label">Hasta que año ejerció</label>
+											<input type="number" max="2023" min="1970" maxlength="4" class="form-control" id="finTrabajo" placeholder="ej: 2012 o actualmente">
+										</div>
+
+										<div class="mb-3">
+											<label for="inputLogros" class="form-label">Tus responsabilidades y logros laborales (máx 450 carácteres)</label>
+											<input type="text" class="form-control" id="inputLogros" aria-describedby="inputLogrosLaborales" maxlength="450">
+										</div>
+		
+									<button type="submit" class="btn btn-primary">Guardar</button>
+								</form>
+
+
+							</div>
+							<div class="tab-pane fade" id="dos-tab-pane" role="tabpanel" aria-labelledby="dos-tab" tabindex="0">...</div>
+						</div>
+
+					</div>
+					<div class="modal-footer d-flex justify-content-around">
+						<button type="button" class="btn btn-danger" data-bs-dismiss="modal"><i class="bi bi-trash3-fill"></i></button>
+						<button type="button" class="btn btn-success"><i class="bi bi-plus-square"></i></button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--***** Ventana edicion educacion *****-->
+		<div class="modal fade bg-dark" id="ventanaModalEducacion" tabindex="-1" aria-labelledby="etiquetaEducacion" aria-hidden="true">
+			<div class="modal-dialog">
+
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="text-dark modal-title fs-5" id="etiquetaEducacion">Edición de Educación</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+
+						<ul class="nav nav-tabs" id="myTab" role="tablist">
+							<li class="nav-item" role="presentation">
+								<button class="nav-link active" id="uno-tab" data-bs-toggle="tab" data-bs-target="#uno-tab-pane" type="button" role="tab" aria-controls="uno-tab-pane" aria-selected="true">Educación 1</button>
+							</li>
+							<li class="nav-item" role="presentation">
+								<button class="nav-link" id="dos-tab" data-bs-toggle="tab" data-bs-target="#dos-tab-pane" type="button" role="tab" aria-controls="dos-tab-pane" aria-selected="false">Educación 2</button>
+							</li>
+						</ul>
+
+						<div class="tab-content" id="myTabContent">
+							<div class="tab-pane fade show active" id="uno-tab-pane" role="tabpanel" aria-labelledby="uno-tab" tabindex="0">
+								
+
+								<form>
+									<!-- <width="1em" height="1em"> Esas son las medidas del logo-->
+		
+										<div class="mb-3">
+											<label for="inputLogo" class="form-label">Introduce el logo del instituto</label>
+											<input class="form-control" type="file" accept="image/*" id="inputLogo">
+										</div>
+		
+										<div class="mb-3">
+											<label for="inputEmpresa" class="form-label">Nombre del instituto</label>
+											<input type="text" class="form-control" id="inputEmpresa" aria-describedby="inputEmpresa" maxlength="30">
+										</div>
+		
+										<div class="mb-3">
+											<label for="inputRol" class="form-label">carrera, título, habilidad, etc. aprendida</label>
+											<input type="text" class="form-control" id="inputRol" aria-describedby="inputRol" maxlength="35">
+										</div>
+		
+										<div class="mb-3">
+											<label for="inicioEstudio" class="form-label">Desde que año estudió</label>
+											<input type="number" max="2023" min="1970" maxlength="4" class="form-control" id="inicioEstudio" placeholder="ej: 2015">
+											
+										</div>
+										
+										<div class="mb-3">
+											<label for="finEstudio" class="form-label">Hasta que año estudió</label>
+											<input type="number" max="2023" min="1970" maxlength="4" class="form-control" id="finEstudio" placeholder="ej: 2022 o actualmente">
+										</div>
+		
+									<button type="submit" class="btn btn-primary">Guardar</button>
+								</form>
+
+
+							</div>
+							<div class="tab-pane fade" id="dos-tab-pane" role="tabpanel" aria-labelledby="dos-tab" tabindex="0">...</div>
+						</div>
+
+					</div>
+					<div class="modal-footer d-flex justify-content-around">
+						<button type="button" class="btn btn-danger" data-bs-dismiss="modal"><i class="bi bi-trash3-fill"></i></button>
+						<button type="button" class="btn btn-success"><i class="bi bi-plus-square"></i></button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--***** Ventana edicion habilidades *****-->
+		<div class="modal fade bg-dark" id="ventanaModalHabilidades" tabindex="-1" aria-labelledby="etiquetaHabilidades" aria-hidden="true">
+			<div class="modal-dialog">
+
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="text-dark modal-title fs-5" id="etiquetaHabilidades">Edición de Habilidades</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+
+						<ul class="nav nav-tabs" id="myTab" role="tablist">
+							<li class="nav-item" role="presentation">
+								<button class="nav-link active" id="habilidades-blandas" data-bs-toggle="tab" data-bs-target="#habilidades-blandas-tab-pane" type="button" role="tab" aria-controls="habilidades-blandas-tab-pane" aria-selected="true">Habilidades Blandas</button>
+							</li>
+							<li class="nav-item" role="presentation">
+								<button class="nav-link" id="habilidades-duras-tab" data-bs-toggle="tab" data-bs-target="#habilidades-duras-tab-pane" type="button" role="tab" aria-controls="habilidades-duras-tab-pane" aria-selected="false">Habilidades Duras</button>
+							</li>
+						</ul>
+
+						<div class="tab-content" id="myTabContent">
+							<div class="tab-pane fade show active" id="habilidades-blandas-tab-pane" role="tabpanel" aria-labelledby="habilidades-blandas" tabindex="0">
+								
+
+								<form>
+
+									<div class="mb-3">
+										<label for="inputHabilidadBlandaUno" class="form-label">Habilidad blanda:</label>
+										<input class="form-control" type="text" id="inputHabilidadBlandaUno" aria-describedby="inputHabilidaBlandaUno" maxlength="30">
+									</div>
+
+									<div class="pb-3 border-bottom mb-3">
+										<label for="porcentajeDominioHbUno" class="form-label">Porcentaje del dominio de esa habilidad</label>
+										<input type="number" max="100" min="0" maxlength="3" class="form-control" id="porcentajeDominioHbUno">
+									</div>
+
+									<div class="mb-3">
+										<label for="inputHabilidadBlandaDos" class="form-label">Habilidad blanda:</label>
+										<input class="form-control" type="text" id="inputHabilidadBlandaDos" aria-describedby="inputHabilidadBlandaDos" maxlength="30">
+									</div>
+
+									<div class="pb-3 border-bottom mb-3">
+										<label for="porcentajeDominioHbDos" class="form-label">Porcentaje del dominio de esa habilidad</label>
+										<input type="number" max="100" min="0" maxlength="3" class="form-control" id="porcentajeDominioHbDos">
+									</div>
+		
+									<button type="submit" class="btn btn-primary">Guardar</button>
+								</form>
+
+
+							</div>
+							<div class="tab-pane fade" id="habilidades-duras-tab-pane" role="tabpanel" aria-labelledby="habilidades-duras-tab" tabindex="0">
+								<form>
+
+									<div class="mb-3">
+										<label for="inputHabilidadDuraUno" class="form-label">Habilidad Dura:</label>
+										<input class="form-control" type="text" id="inputHabilidadDuraUno" aria-describedby="inputHabilidadDuraUno" maxlength="30">
+									</div>
+
+									<div class="pb-3 border-bottom mb-3">
+										<label for="porcentajeDominioHdUno" class="form-label">Porcentaje del dominio de esa habilidad:</label>
+										<input type="number" max="100" min="0" maxlength="3" class="form-control" id="porcentajeDominioHdUno">
+									</div>
+
+									<div class="mb-3">
+										<label for="inputHabilidadDuraDos" class="form-label">Habilidad Dura:</label>
+										<input class="form-control" type="text" id="inputHabilidadDuraDos" aria-describedby="inputHabilidadDuraDos" maxlength="30">
+									</div>
+
+									<div class="pb-3 border-bottom mb-3">
+										<label for="porcentajeDominioHdDos" class="form-label">Porcentaje del dominio de esa habilidad:</label>
+										<input type="number" max="100" min="0" maxlength="3" class="form-control" id="porcentajeDominioHdDos">
+									</div>
+		
+									<button type="submit" class="btn btn-primary">Guardar</button>
+								</form>
+							</div>
+						</div>
+
+					</div>
+					<div class="modal-footer d-flex justify-content-around">
+						<button type="button" class="btn btn-danger" data-bs-dismiss="modal"><i class="bi bi-trash3-fill"></i></button>
+						<button type="button" class="btn btn-success"><i class="bi bi-plus-square"></i></button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--***** Ventana edicion experiencia *****-->
+		<div class="modal fade bg-dark" id="ventanaModalProyectos" tabindex="-1" aria-labelledby="etiquetaProyectos" aria-hidden="true">
+			<div class="modal-dialog">
+
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="text-dark modal-title fs-5" id="etiquetaProyectos">Edición de Proyectos</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+
+						<ul class="nav nav-tabs" id="myTab" role="tablist">
+							<li class="nav-item" role="presentation">
+								<button class="nav-link active" id="uno-tab" data-bs-toggle="tab" data-bs-target="#uno-tab-pane" type="button" role="tab" aria-controls="uno-tab-pane" aria-selected="true">Proyecto 1</button>
+							</li>
+							<li class="nav-item" role="presentation">
+								<button class="nav-link" id="dos-tab" data-bs-toggle="tab" data-bs-target="#dos-tab-pane" type="button" role="tab" aria-controls="dos-tab-pane" aria-selected="false">Proyecto 2</button>
+							</li>
+						</ul>
+
+						<div class="tab-content" id="myTabContent">
+							<div class="tab-pane fade show active" id="uno-tab-pane" role="tabpanel" aria-labelledby="uno-tab" tabindex="0">
+							
+								<form>
+		
+									<div class="mb-3">
+										<label for="inputImgProyecto" class="form-label">Imagen del proyecto</label>
+										<input class="form-control" type="file" accept="image/*" id="inputImgProyecto">
+									</div>
+		
+									<div class="mb-3">
+										<label for="inputNameProyecto" class="form-label">Nombre del proyecto</label>
+										<input type="text" class="form-control" id="inputNameProyecto" aria-describedby="inputNameProyecto" maxlength="30">
+									</div>
+
+									<div class="mb-3">
+										<label for="inicioProyecto" class="form-label">Año de inicio del proyecto</label>
+										<input type="number" max="2023" min="1970" maxlength="4" class="form-control" id="inicioProyecto" placeholder="ej: 2002">
+										
+									</div>
+									
+									<div class="mb-3">
+										<label for="finProyecto" class="form-label">Año de finalización del proyecto</label>
+										<input type="number" max="2023" min="1970" maxlength="4" class="form-control" id="finProyecto" placeholder="ej: 2012 o actualmente">
+									</div>
+		
+									<div class="mb-3">
+										<label for="inputDescripcionProyecto" class="form-label">Descripción del proyecto (máx 450 carácteres)</label>
+										<input type="text" class="form-control" id="inputDescripcionProyecto" aria-describedby="inputDescripcionProyecto" maxlength="450">
+									</div>
+		
+									<button type="submit" class="btn btn-primary">Guardar</button>
+								</form>
+
+
+							</div>
+							<div class="tab-pane fade" id="dos-tab-pane" role="tabpanel" aria-labelledby="dos-tab" tabindex="0">
+								
+								<h3>hello</h3>
+							</div>
+						</div>
+
+					</div>
+					<div class="modal-footer d-flex justify-content-around">
+						<button type="button" class="btn btn-danger" data-bs-dismiss="modal"><i class="bi bi-trash3-fill"></i></button>
+						<button type="button" class="btn btn-success"><i class="bi bi-plus-square"></i></button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--***** Ventana edicion footer *****-->
+		<div class="modal fade bg-dark" id="ventanaModalFooter" tabindex="-1" aria-labelledby="etiquetaFooter" aria-hidden="true">
+			<div class="modal-dialog">
+
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="text-dark modal-title fs-5" id="etiquetaFooter">Edición Footer</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+
+					<div class="modal-body">
+						<form>
+							<div class="mb-3">
+								<label for="inputNombreApellidoFooter" class="form-label">Nombre y apellido</label>
+								<input type="text" class="form-control" id="inputNombreApellidoFooter" aria-describedby="textoNombreApellidoFooter" maxlength="20">
+							</div>
+
+							<div class="mb-3">
+								<label for="inputEmailFooter" class="form-label">E-mail</label>
+								<input type="email" class="form-control" id="inputEmailFooter" aria-describedby="emailHelp">
+							</div>
+							
+							<button type="submit" class="btn btn-primary">Guardar</button>
+						</form>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+	<!--SCRIPT DE BOOTSTRAP-->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>
